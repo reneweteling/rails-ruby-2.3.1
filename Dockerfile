@@ -4,7 +4,7 @@ MAINTAINER Rene Weteling <rene@weteling.com>
 ENV APP_HOME=/var/www/app \
   BUNDLE_JOBS=4
 
-# Update and install packages
+# Update and install packagess
 RUN apt-get update -qq && \
   apt-get install -y build-essential libpq-dev nodejs wget fontconfig curl libtag1-dev cron vim python-pip python-dev jq && \
   pip install awscli
